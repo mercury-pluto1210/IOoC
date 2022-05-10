@@ -14,8 +14,7 @@ import math
 polite = ['公式', 'アカウント', 'ニュース', '市', '情報', 'です', 'ます']
 
 # MeCab準備 辞書の指定
-# データが多すぎるためGitHubには挙げられなかった
-# tagger = MeCab.Tagger(r'-Owakati -d "./mecab-ipadic-neologd"')
+tagger = MeCab.Tagger(r'-Owakati -d "./mecab-ipadic-neologd"')
 
 class SortTweet:
   def __init__(self, jsonData):
